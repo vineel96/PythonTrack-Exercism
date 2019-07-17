@@ -7,7 +7,7 @@ from meetup import meetup, MeetupDayException
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
 class MeetupTest(unittest.TestCase):
-    '''def test_monteenth_of_may_2013(self):
+    def test_monteenth_of_may_2013(self):
         self.assertEqual(
             meetup(2013, 5, 'teenth', 'Monday'), date(2013, 5, 13))
 
@@ -89,7 +89,7 @@ class MeetupTest(unittest.TestCase):
 
     def test_sunteenth_of_october_2013(self):
         self.assertEqual(
-            meetup(2013, 10, 'teenth', 'Sunday'), date(2013, 10, 13))'''
+            meetup(2013, 10, 'teenth', 'Sunday'), date(2013, 10, 13))
 
     def test_first_monday_of_march_2013(self):
         self.assertEqual(
@@ -147,7 +147,7 @@ class MeetupTest(unittest.TestCase):
         self.assertEqual(
             meetup(2013, 4, '1st', 'Sunday'), date(2013, 4, 7))
 
-    '''def test_second_monday_of_march_2013(self):
+    def test_second_monday_of_march_2013(self):
         self.assertEqual(
             meetup(2013, 3, '2nd', 'Monday'), date(2013, 3, 11))
 
@@ -394,7 +394,7 @@ class MeetupTest(unittest.TestCase):
 
     def test_nonexistent_fifth_monday_of_february_2015(self):
         with self.assertRaisesWithMessage(MeetupDayException):
-            meetup(2015, 2, '5th', 'Monday')'''
+            meetup(2015, 2, '5th', 'Monday')
 
     # Utility functions
     def setUp(self):
